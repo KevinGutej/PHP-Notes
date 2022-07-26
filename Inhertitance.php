@@ -35,3 +35,29 @@ class Surgeon extends Doctor
 }
 $kevin = new Dentist(1200);
 $kevin->Heal();
+
+
+
+class Vehicle
+{
+    public int $speed;
+    public int $cost;
+    public string $color;
+
+    public function SpeedingUp()
+    {
+        echo "The car is speeding up..." . PHP_EOL;
+    }
+    protected function SlowingDown()
+    {
+        echo "The car is slowing down..." . PHP_EOL;
+    }
+}
+class Car extends Vehicle
+{
+    
+}
+class Ship extends Vechicle
+{
+    
+}
