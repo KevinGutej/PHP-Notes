@@ -39,7 +39,7 @@ class Advertiser implements Managable
     }
     public function __toString()
     {
-        return $this->newName . PHP_EOL . $this->lastName . PHP_EOL . $this->accountBalance . PHP_EOL ;
+        return $this->newName . PHP_EOL . $this->lastName . PHP_EOL . $this->accountBalance . PHP_EOL;
     }
 }
 
@@ -68,8 +68,8 @@ function nameChooser(Managable $user, string $names)
 }
 
 $user = new User();
-nameChooser($user,"Kevin");
+nameChooser($user, "Kevin");
 $admin = new Administrator();
-nameChooser($admin,"Bob");
+nameChooser($admin, "Bob");
 $advertisor = new Advertiser();
 nameChooser($advertisor, "Jonny Smith");
